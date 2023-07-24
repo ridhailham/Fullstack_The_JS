@@ -8,7 +8,7 @@ app.use(cors())
 app.use(express.json())
 
 
-db.sync({ force : true })
+db.sync()
     .then(() => {
         // seed.userSeed()
         // seed.categorySeed()
